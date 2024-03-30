@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#Ffa500"
+        android:text="Ecole Centrale Polytechnique d'ingénieur"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:src="@drawable/ecpi_1" />
+
+    <EditText
+        android:id="@+id/editTextText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Prénom" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nom" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Téléphone" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Adresse mail" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date de naissance JJ/MM/AAAA" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Lieu" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"
+            android:text="Diplome" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genre" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="BAC" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:checked="true"
+                android:text="BAC+1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="165dp"
+                android:layout_height="98dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:text="Femme" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:text="Homme" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="350dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Accepter les conditions d'utilisation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layoutmarginLeft="40dp"
+            android:layout_marginRight="100dp"
+            android:text="Annuler"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:Layout_marginLeft="40dp"
+            android:text="0K" />
+    </LinearLayout>
+
+</LinearLayout>
